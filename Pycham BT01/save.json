@@ -1,0 +1,12 @@
+{
+  "nom": "STEVE",
+  "hp": 100,
+  "max_hp": 100,
+  "progress": 0,
+  "exercices_reussis": 0,
+  "exercices_rates": 0,
+  "runs_effectues": 0,
+  "music_enabled": true,
+  "beep_enabled": true,
+  "last_difficulty": "facile"
+}
