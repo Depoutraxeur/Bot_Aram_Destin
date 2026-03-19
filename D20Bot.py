@@ -2,11 +2,26 @@ import discord
 import random
 import asyncio
 import time
+import os
+
+import os
+print("TEST OK")
+TOKEN = os.getenv("DISCORD_TOKEN")
+print("TOKEN?", TOKEN is not None)
+print("LEN", len(TOKEN) if TOKEN else 0)
 
 dernier_destin = 0
 cooldown = 300
 
-TOKEN = "???"
+TOKEN = os.getenv("DISCORD_TOKEN")
+print("Token trouvé :", TOKEN is not None)
+
+if TOKEN:
+    print("Longueur du token :", len(TOKEN))
+    print("Début du token :", TOKEN[:4])
+    print("Fin du token :", TOKEN[-4:])
+else:
+    print("Aucun token trouvé")
 
 intents = discord.Intents.default()
 intents.message_content = True
